@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9F3515E7-CEA0-495F-AA49-D7456F7BF6CA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>五十音</RootNamespace>
+    <AssemblyName>五十音</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>50.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="50.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="voices\a.wav" />
+    <EmbeddedResource Include="voices\ba.wav" />
+    <EmbeddedResource Include="voices\be.wav" />
+    <EmbeddedResource Include="voices\bi.wav" />
+    <EmbeddedResource Include="voices\bo.wav" />
+    <EmbeddedResource Include="voices\bu.wav" />
+    <EmbeddedResource Include="voices\chi.wav" />
+    <EmbeddedResource Include="voices\da.wav" />
+    <EmbeddedResource Include="voices\de.wav" />
+    <EmbeddedResource Include="voices\ji.wav" />
+    <EmbeddedResource Include="voices\do.wav" />
+    <EmbeddedResource Include="voices\du.wav" />
+    <EmbeddedResource Include="voices\e.wav" />
+    <EmbeddedResource Include="voices\ga.wav" />
+    <EmbeddedResource Include="voices\ge.wav" />
+    <EmbeddedResource Include="voices\gi.wav" />
+    <EmbeddedResource Include="voices\go.wav" />
+    <EmbeddedResource Include="voices\gu.wav" />
+    <EmbeddedResource Include="voices\ha.wav" />
+    <EmbeddedResource Include="voices\he.wav" />
+    <EmbeddedResource Include="voices\hi.wav" />
+    <EmbeddedResource Include="voices\ho.wav" />
+    <EmbeddedResource Include="voices\hu.wav" />
+    <EmbeddedResource Include="voices\i.wav" />
+    <EmbeddedResource Include="voices\ka.wav" />
+    <EmbeddedResource Include="voices\ke.wav" />
+    <EmbeddedResource Include="voices\ki.wav" />
+    <EmbeddedResource Include="voices\ko.wav" />
+    <EmbeddedResource Include="voices\ku.wav" />
+    <EmbeddedResource Include="voices\ma.wav" />
+    <EmbeddedResource Include="voices\me.wav" />
+    <EmbeddedResource Include="voices\mi.wav" />
+    <EmbeddedResource Include="voices\mo.wav" />
+    <EmbeddedResource Include="voices\mu.wav" />
+    <EmbeddedResource Include="voices\n.wav" />
+    <EmbeddedResource Include="voices\na.wav" />
+    <EmbeddedResource Include="voices\ne.wav" />
+    <EmbeddedResource Include="voices\ni.wav" />
+    <EmbeddedResource Include="voices\no.wav" />
+    <EmbeddedResource Include="voices\nu.wav" />
+    <EmbeddedResource Include="voices\o.wav" />
+    <EmbeddedResource Include="voices\pa.wav" />
+    <EmbeddedResource Include="voices\pe.wav" />
+    <EmbeddedResource Include="voices\pi.wav" />
+    <EmbeddedResource Include="voices\po.wav" />
+    <EmbeddedResource Include="voices\pu.wav" />
+    <EmbeddedResource Include="voices\ra.wav" />
+    <EmbeddedResource Include="voices\re.wav" />
+    <EmbeddedResource Include="voices\ri.wav" />
+    <EmbeddedResource Include="voices\ro.wav" />
+    <EmbeddedResource Include="voices\ru.wav" />
+    <EmbeddedResource Include="voices\sa.wav" />
+    <EmbeddedResource Include="voices\se.wav" />
+    <EmbeddedResource Include="voices\shi.wav" />
+    <EmbeddedResource Include="voices\so.wav" />
+    <EmbeddedResource Include="voices\su.wav" />
+    <EmbeddedResource Include="voices\ta.wav" />
+    <EmbeddedResource Include="voices\te.wav" />
+    <EmbeddedResource Include="voices\to.wav" />
+    <EmbeddedResource Include="voices\tsu.wav" />
+    <EmbeddedResource Include="voices\u.wav" />
+    <EmbeddedResource Include="voices\wa.wav" />
+    <EmbeddedResource Include="voices\wo.wav" />
+    <EmbeddedResource Include="voices\ya.wav" />
+    <EmbeddedResource Include="voices\yo.wav" />
+    <EmbeddedResource Include="voices\yu.wav" />
+    <EmbeddedResource Include="voices\za.wav" />
+    <EmbeddedResource Include="voices\ze.wav" />
+    <EmbeddedResource Include="voices\zi.wav" />
+    <EmbeddedResource Include="voices\zo.wav" />
+    <EmbeddedResource Include="voices\zu.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
